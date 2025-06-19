@@ -1,0 +1,231 @@
+/* Grundlayout */
+body, button, a {
+  background-color: #ffffff;
+  color: #1f2937;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Header */
+header {
+  background-color: #000000;
+  color: white;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 720rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.header-nav a {
+    background-color: transparent;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.header-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Header */
+@media (max-width: 640px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+/* Work-in-Progress Banner */
+.wip-banner {
+  padding: 2rem 1rem 0.5rem;
+  background-color: white;
+  text-align: center;
+}
+
+.wip-banner h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.wip-banner p {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #f3f4f6;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 6rem 1rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.hero a {
+  background-color: white;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.hero a:hover {
+  background-color: #e5e7eb;
+}
+
+/* Services Section */
+.services-section {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.services-section h2 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.service-card {
+  max-width: 300px;
+  text-align: center;
+}
+
+.service-card img {
+  max-width: 80px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  color: #4b5563;
+}
+
+/* Responsive Services */
+@media (max-width: 768px) {
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Über mich */
+.about-section {
+  background-color: #f3f4f6;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.about-container img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 9999px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+.about-container h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about-container p {
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+/* Kontakt CTA */
+.contact-section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.contact-section p {
+  margin-bottom: 1rem;
+  color: #4b5563;
+}
+
+/* Nur dieser Button */
+.cta-button {
+  background-color: black;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5rem; /* ⬅️ Abstand nach oben */
+}
+
+.cta-button:hover {
+  background-color: #1f2937;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
